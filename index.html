@@ -10,17 +10,37 @@
 </head>
 
 <body>
-    <div class="header">
+    <div class="header" >
         <h1> <span class="header-text-0">Devoloper<span class="red">Flex</span> </span></h1>
-        <div class="header-right">
-            <a class="active" href="">Home</a>
-            <a  href="#">Contact</a>
-            <a  href="#">About</a>
-            <a  href="#">Services</a>
+        <div class="header-right" >
+            <button class="active" href="">Home</a>
+            <button>Contact</button>
+            <button>About</button>
+            <button>Log In</button>
+            <button class="Signup-button" id="signup" onclick="openForm_signup()">Sign up </button>
+            <div class="form-popup" id="mySignupForm">
+                <form action="" class="form-container">
+                  <h1>Sign up Now</h1>
+                  <label for="First name"><b>First Name</b></label>
+                  <input type="text" placeholder="Enter First name" name="Name" required>
+      
+                  <label for="Last name"><b>Last Name</b></label>
+                  <input type="text" placeholder="Enter Last name" name="Last name" required>
+              
+                  <label for="email"><b>Email</b></label>
+                  <input type="text" placeholder="Enter Email" name="email" required>
+              
+                  <label for="psw"><b>Password</b></label>
+                  <input type="password" placeholder="Enter Password" name="psw" required>
+              
+                  <button type="submit" class="btn">Login</button>
+                  <button type="button" class="btn cancel" onclick="closeForm_signup()">Close</button>
+                </form>
+              </div>
             
           </div>
     </div>
-    <div class="landing-section">
+    <div class="landing-section"id="landing-section">
         <div class = "landing-section-1" id="landing-section-1">
             <h1><span class="landing-text-1"> Welcome to Hire Developer </span></h1>
             <h3><span class="landing-text-2">Find developers as you want</span></h3>
@@ -45,6 +65,44 @@
        
     </div>
 
+    <div class='feature-section'>
+        <div class='feature-section-01' id='f-section-01'>
+          <img class="icons" src="images/globe-1.png">
+          <h2> <span class ='feature-section-h2' >Smooth Navigations</span></h2><br>
+          <P>Lorem ipsum dolor sit amet, consectetur adipiscing elit,<br>
+            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          
+        </div>
+        <div class='feature-section-01' id='f-section-02'>
+            <img class="icons" src="images/work.png">
+          <h2 ><span class ='feature-section-h2' >Beautiful UI</span></h2><br>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,<br>
+            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          
+          
+        </div>
+        <div class='feature-section-01' id='f-section-03'>
+            <img class="icons" src="images/setting.png">
+          <h2 ><span class ='feature-section-h2' >Web Design</span></h2><br>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,<br>
+            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          
+          
+        </div>
+        <div class='feature-section-01' id='f-section-04'>
+            <img class="icons" src="images/network.png">
+            <h2 ><span class ='feature-section-h2' >Interactions</span></h2><br>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,<br>
+                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </div>
+     </div>
+
+     <div class ="footer-section" id='footer-section'>
+         <div class="about-us">
+             <h2><span class="about-text">About Us</span></h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,<br>sed do eiusmod tempor incididunt ut labore et dolore magna aliqua </p>
+         </div>
+     </div>
 
 
 
@@ -53,5 +111,6 @@
 
 
 
+    <script src="main.js"></script>
 
 </body>
