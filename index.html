@@ -16,30 +16,11 @@
             <button class="active" href="">Home</a>
             <button>Contact</button>
             <button>About</button>
-            <button>Log In</button>
+            <button class="Signup-button" id="login" onclick="openForm_login()">Log In</button>
             <button class="Signup-button" id="signup" onclick="openForm_signup()">Sign up </button>
-            <div class="form-popup" id="mySignupForm">
-                <form action="" class="form-container">
-                  <h1>Sign up Now</h1>
-                  
-                  <input type="text" placeholder="Enter First name" name="Name" required><br>
-      
-                 
-                  <input type="text" placeholder="Enter Last name" name="Last name" required><br>
-              
-                  
-                  <input type="text" placeholder="Enter Email" name="email" required><br>
-              
-                 
-                  <input type="password" placeholder="Enter Password" name="psw" required><br>
-              
-                  <button type="submit" class="btn">Register</button>
-                  <button type="button" class="btn cancel" onclick="closeForm_signup()">Close</button>
-                </form>
-              </div>
-            
             </div>
     </div>
+    <!--LANDING SECTION-->
     <div class="landing-section"id="landing-section">
         <div class = "landing-section-1" id="landing-section-1">
             <h1><span class="landing-text-1"> Welcome to Hire Developer </span></h1>
@@ -47,13 +28,50 @@
         </div>
     </div>
 
+    <!--Hidden Div to keep the form Sing up/log in-->
+    <div class="hidden-form-section"  id="hidden-form-section">
+      <div class="hidden-container">
+        <h1> <span class="hidden-form-section-h1">   Sign up </span></h1><br><br>
+        <!--Actual Form for sign up/log in-->
+        <img class="icons-signup-login" src="images/signup.png">
+        <form action="" class="signup-form-control">
+          <input type="text" placeholder="Enter name" name="Name" required><br>
+          <input type="text" placeholder="Enter Email" name="email" required><br>
+          <input type="password" placeholder="Enter Password" name="pass" required><br>
+          <button type="button" id="button-signup"  class="button-signup" onclick="SignUp()">Sign up</button>
+          <button type="button"  id="button-cancel"  class="button-signup" onclick="Cancel()">Cancel</button>
+        </form>
+      </div>
+    </div>
+
+
+    <!--Hidden section for LOG in FORM-->
+    <div class="hidden-form-section-login"  id="hidden-form-section-login">
+      <div class="hidden-container-login">
+        <h1> <span class="hidden-form-section-login-h1">  Log in </span></h1><br><br>
+        <!--Actual Form for sign up/log in-->
+        <img class="icons-signup-login" src="images/signup.png">
+        <form action="" class="login-form-control">
+         
+          <input type="text" placeholder="Enter Email" name="email" required><br>
+          <input type="password" placeholder="Enter Password" name="pass" required><br>
+          <button type="button" id="button-signup"  class="button-signup" onclick="LogIn()">Login</button>
+          <button type="button"  id="button-cancel"  class="button-signup" onclick="Cancel()">Cancel</button>
+        </form>
+      </div>
+    </div>
+
+    <!--End of hidden form section-->
+
+
     <div class="intro-section" id="intro-section">
         <div class = "intro-section-text" id="intro-section-text">
-            <p class="intro-paragraph">Welcome to our design page where you can find the best <br>frontend developer just right</p>
+          <h1 style="color: white;">Design Your way</h1>
+          <p class="intro-paragraph">Welcome to our design page where you can find the best <br>frontend developer just right</p>
         </div>
-        <div class ="intro-section-button">
-            <button type="button" class="button"  onclick="handleClick_Services()">  See services</button>
-        </div>
+         <!--<div class ="intro-section-button">
+            <button type="button" class="button"  onclick="handleClick_Services()">  See services  >></button>
+          </div> -->
     </div>
 
     <div class="service-demo-section">
@@ -100,7 +118,7 @@
     <!--COntact US form -->
     <div class ="contact-us-form"  id="contact-us-form">
             <form action="" class="contact-us-form-control">
-                <h1><span class ="contact-us-form-h1">Contact Us</span></h1>
+                <h1><span class ="contact-us-form-control-h1">Contact Us</span></h1>
                   
                   <input type="text" placeholder="Enter  name" name="UserName" required>
                     <br>
@@ -129,7 +147,12 @@
          <div class="about-us">
              <h2><span class="about-text">About Us</span></h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,<br>sed do eiusmod tempor incididunt ut labore et dolore magna aliqua </p>
-         </div>
+            <br><p>Find us </p>
+            <a href="#"><img class="icons-footer-section" src="images/gmail.png"></a>
+            <a href="#"><img class="icons-footer-section" src="images/insta.png"></a>
+            <a href="#"><img class="icons-footer-section" src="images/linkedin.png"></a>
+            <a href="#"><img class="icons-footer-section" src="images/fb.png"></a>
+          </div>
     </div>
 
 
