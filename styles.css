@@ -34,6 +34,7 @@
 .header button:hover {
     background-color: #ddd;
     color: black;
+    
 }
 
 .header .header-text-0{
@@ -145,7 +146,8 @@ p{
 .feature-section{
     display: grid;
     grid-template-columns: auto auto auto auto ;
-    padding: 25px;
+   
+    padding-bottom: 50px;
 }
 
 .feature-section-01  {
@@ -169,6 +171,92 @@ p{
     font: 30px;
     font-weight: bold;
     
+}
+
+/*COntact us form design**/
+
+
+.contact-us-form{
+    display: grid;
+    grid-template-columns: auto auto  ;
+    justify-content: space-between;
+    padding: 40px;
+    background-color: rgb(248, 129, 61);
+    height: 600px;
+
+}
+.contact-us-form .contact-us-form-h1{
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+}
+.contact-us-form .contact-us-form-control{
+    align-items: center;
+    padding: 25px;
+    
+
+}
+.contact-us-form-control input[type=text], .contact-us-form-control input[type=text] {
+    
+    align-items: center;
+    border:none;
+    height: 25px;
+    width: 800px;
+    margin: 15px 0;
+    border-radius: 5px;
+    padding-bottom: 30px;
+    background: white;
+    font-size: 20px;
+}
+
+
+.contact-us-form .button-feedback{
+    background-color: white;
+    border: none;
+    color: black;
+    padding:  15px 30px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    border-radius: 10px;
+}
+.contact-us-form .button-feedback:hover {
+    background-color: orangered;
+    color: black;
+}
+
+
+
+
+
+
+.contact-us-feature-section{
+  
+    padding:50px;
+}
+.contact-us-feature-section .contact-icons{
+    padding-top: 50px;
+    height: 90px;
+    width: 90px;
+    padding-right:50px;
+    align-items: center;
+}
+
+.contact-us-feature-section .contact-us-feature-section-h2{
+    text-align: left;
+    font-size: 35px;
+    color: white;
+    padding-top: 50px;
+    
+}
+
+.contact-us-feature-section .contact-us-feature-section-p{
+    text-align: left;
+    font-size: 25px;
+    color: white;
+    padding-top: 50px;
 }
 
 
@@ -218,17 +306,17 @@ p{
     display: none;
     position: absolute;
     top:100px;
-    right: 50px;
-    
-    
-    border: 3px solid #f1f1f1;
-    background-color: rgb(255, 255, 255);
-  }
+    grid-template-columns: auto  ;
+    background-color: white;
+    background-size: 1900px;
+ 
+    height: 800px;
+    opacity: 0.9;
+}
   
   /* Add styles to the form container */
 .form-container {
-    width: 300px;
-    height: 100px;
+   
     background-color: rgb(255, 255, 255);
     opacity: 0.8;
     
@@ -253,7 +341,7 @@ p{
   
   /* Set a style for the submit/login button */
 .form-container .btn {
-    background-color: #0446aa;
+    background-color:orange;
     color: white;
     padding: 16px 20px;
     border: none;
@@ -266,7 +354,7 @@ p{
   
 
 .form-container .cancel {
-    background-color: rgb(107, 149, 240);
+    background-color: orange;
 }
   
   /* Add some hover effects to buttons */
